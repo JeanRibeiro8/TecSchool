@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wp {
+  height: 60vh;
+  background-image: url("/src/img/wp.png");
+  background-size: cover;     
+  /* fill without distorting */
+}
+
+.social {
+  display: flex;
+  gap: 16px;
+}
+
+.social svg {
+  width: 24px;
+  height: 24px;
+}
