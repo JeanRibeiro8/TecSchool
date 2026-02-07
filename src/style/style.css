@@ -4,16 +4,131 @@
   box-sizing: border-box;
 }
 
-.wp {
-  height: 60vh;
-  background-image: url("/src/img/wp.png");
-  background-size: cover;     
-  /* fill without distorting */
+h1{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 5%;
+  margin-bottom: 3%;
+  font-size: 50px;
+  font-weight: bold;
 }
 
-.social {
+p{
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 20px;
+}
+
+header{
+  background-color: #521CED;
+  position: fixed;
+  width: 100%;
+    height: 25%;
+}
+
+nav{
   display: flex;
+  justify-content: center;
+  align-items: center;
+   gap: 3%;
+}
+
+ul{
+  list-style-type: none; 
+}
+
+footer{
+   background-color: #6F53BF;
+  width: 100%;
+    height: 25%;
+}
+
+footer .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .social{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+
+      background-color: #8D6CED;
   gap: 16px;
+  padding-top: 5%;
+  /*space*/
+  padding-bottom: 5%;
+  padding-right: 5%;
+ }
+
+video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 5%;
+  margin-bottom: 5%;
+   margin-left: 20%;
+  margin-right: 20%;
+}
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    font-family: Arial, sans-serif;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 130%;
+ 
+}
+
+
+.menu-text {
+  margin-left: 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu-text:hover {
+    color: #8D6CED;
+}
+
+.menu-register {
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: #6F53BF;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+  
+
+    position: absolute;
+    top: 30%;
+    right: 3%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu-register:hover {
+    background-color: #8D6CED;
+}
+
+.wp {
+  height: 60vh;
+  background-image: url("/src/img/bkg.png");
+  background-size: cover;     
+  /* fill without distorting */
 }
 
 .social svg {
