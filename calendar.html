@@ -1,85 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technology School</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Technology School | Calendar</title>
+
+  <!-- BOOTSTRAP ICONS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+  <!-- BOOTSTRAP -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="src/style/style.css" />
 </head>
+
 <body>
-    <link rel="icon" href="src/tec.ico">
-    <link rel="stylesheet" href="src/style/style.css">
-    <header>
-       <nav>
-        <a href="#" class="logo">
-            <img src="src/img/logo.png" alt="logo">
-        </a>
-<div class="menu">
-        <ul>
-            <li> <a href="/index.html" class="menu-text" style="margin-left: 30px;">Home</a></li>
-            <li> <a href="/techn.html" class="menu-text">Technology</a></li>
-            <li> <a href="/calendar.html" class="menu-text">Calendar</a></li>
-            <li> <a href="/login.html" class="menu-register">Login</a></li>
-           
+
+  <!---- NAVBAR ---->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+
+    <div class="container">
+
+      <!-- LOGO -->
+      <a href="#" class="navbar-brand d-flex align-items-center gap-2">
+
+        <img
+          src="src/img/logo.png"
+          alt="Technology School Logo"
+          width="50">
+
+        <span class="fw-bold">
+          TecSchool
+        </span>
+
+      </a>
+
+      <!-- MOBILE BUTTON -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu">
+
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+
+      <!-- MENU -->
+      <div class="collapse navbar-collapse" id="menu">
+
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="techn.html" class="nav-link">
+              Technology
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="calendar.html" class="nav-link">
+              Calendar
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="login.html" class="btn btn-primary px-4">
+              Login
+            </a>
+          </li>
+
         </ul>
-        </div>
-       </nav>
-    </header>
 
- <div class="wp"></div>
+      </div>
 
- <style>
-    h2{
-  margin-left: 20%;
-}
-
-p{
-    margin-bottom: 5%;
-}
- </style>
- <div class="content">
- <h1>Calendar</h1>
-
- <h2>from 05/06 to 20/06</h2>
- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-    officia deserunt mollit anim id est laborum.</p>
     </div>
 
- <h2>from 05/06 to 20/06</h2>
- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-    officia deserunt mollit anim id est laborum.</p>
+  </nav>
+
+  <!-- HERO -->
+  <section class="bg-dark text-white py-5 text-center">
+    <div class="container">
+
+      <h1 class="display-4 fw-bold">Academic Calendar</h1>
+
+      <p class="lead mt-3">
+        Stay updated with all important events, classes, and activities.
+      </p>
+
     </div>
+  </section>
 
+  <!-- CALENDAR CONTENT -->
+  <main class="py-5">
 
- <h2>from 05/06 to 20/06</h2>
- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-    officia deserunt mollit anim id est laborum.</p>
-    </div>
+    <div class="container">
 
-    <footer>
-         <div class="social">
-            <a href="#"><img src="/src/icons/insta.svg" alt="Instagram"></a>
-             <a href="#"><img src="/src/icons/face.svg" alt="Facebook"></a>
-              <a href="#"><img src="/src/icons/link.svg" alt="Linkedin"></a>
-               <a href="#"><img src="/src/icons/yt.svg" alt="Youtube"></a>
+      <div class="row g-4">
+
+        <!-- CARD 1 -->
+        <div class="col-lg-4 col-md-6">
+
+          <div class="card h-100 shadow-sm border-0">
+
+            <div class="card-body">
+
+              <h3 class="card-title mb-3">
+                From 05/06 to 20/06
+              </h3>
+
+              <p class="card-text text-secondary">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+
+            </div>
+
+          </div>
+
         </div>
 
-        <div><a href="#" class="logo">
-            <img src="src/img/logo.png" alt="logo">
-        </a></div>
-    </footer>
+        <!-- CARD 2 -->
+        <div class="col-lg-4 col-md-6">
+
+          <div class="card h-100 shadow-sm border-0">
+
+            <div class="card-body">
+
+              <h3 class="card-title mb-3">
+                From 21/06 to 30/06
+              </h3>
+
+              <p class="card-text text-secondary">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="col-lg-4 col-md-6">
+
+          <div class="card h-100 shadow-sm border-0">
+
+            <div class="card-body">
+
+              <h3 class="card-title mb-3">
+                From 01/07 to 15/07
+              </h3>
+
+              <p class="card-text text-secondary">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+    <!----FOOTER---->
+
+  <footer class="bg-dark text-white py-4">
+
+    <div class="container">
+
+      <div class="row align-items-center text-center text-lg-start g-4">
+
+        <!-- SOCIAL -->
+        <div class="col-lg-4">
+
+          <div class="d-flex justify-content-center justify-content-lg-start gap-3">
+
+            <a href="#" class="text-white fs-4">
+              <i class="bi bi-instagram"></i>
+            </a>
+
+            <a href="#" class="text-white fs-4">
+              <i class="bi bi-facebook"></i>
+            </a>
+
+            <a href="#" class="text-white fs-4">
+              <i class="bi bi-linkedin"></i>
+            </a>
+
+            <a href="#" class="text-white fs-4">
+              <i class="bi bi-youtube"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- COPYRIGHT -->
+        <div class="col-lg-4 text-center">
+
+          <p class="mb-0">
+            © 2026 TecSchool. All rights reserved.
+          </p>
+
+        </div>
+
+        <!-- LOGO -->
+        <div class="col-lg-4 text-center text-lg-end">
+
+          <img
+            src="src/img/logo.png"
+            alt="TecSchool Logo"
+            width="60">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- CUSTOM JS -->
+  <script src="src/script/script.js"></script>
+
 </body>
 
-<link href="src/script/script.js">
 </html>

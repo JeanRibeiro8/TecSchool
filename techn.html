@@ -1,95 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technology School</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Technology School | Technology</title>
+
+<!-- BOOTSTRAP ICONS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+  <!-- BOOTSTRAP -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="src/style/style.css" />
 </head>
+
 <body>
-    <link rel="icon" href="src/tec.ico">
-    <link rel="stylesheet" href="src/style/style.css">
-    <header>
-       <nav>
-        <a href="#" class="logo">
-            <img src="src/img/logo.png" alt="logo">
-        </a>
-<div class="menu">
-        <ul>
-            <li> <a href="/index.html" class="menu-text" style="margin-left: 30px;">Home</a></li>
-            <li> <a href="/techn.html" class="menu-text">Technology</a></li>
-            <li> <a href="/calendar.html" class="menu-text">Calendar</a></li>
-            <li> <a href="/login.html" class="menu-register">Login</a></li>
-           
-        </ul>
-        </div>
-       </nav>
-    </header>
 
- <div class="wp"></div>
- <div class="content">
  
- <h1>Software</h1>
- <p>Software is a set of programs and instructions that tell a computer, 
-    phone, or tablet what to do. It is not a physical object, so you cannot 
-    touch it, but you use it every day. Examples of software are mobile apps, 
-    websites, games, and operating systems like Windows, Android, and iOS.</p>
-    <img src="/src/img/soft.png" alt="software" class="tec-img">
+  <!---- NAVBAR ---->
 
-     <h1>Hardware</h1>
- <p>Hardware is the physical part of a computer or electronic device. It is everything you can see and touch. 
-    Examples of hardware include the keyboard, mouse, screen, processor, memory, and hard drive. Without hardware, a computer cannot exist.
-Hardware works together with software. While software gives instructions, hardware executes 
-those instructions. For example, when you open a program, the processor processes the data, 
-the memory stores information, and the screen shows the result.
-Internal hardware, such as the CPU, RAM, and storage, is responsible for the performance of the device.</p>
-<img src="/src/img/hard.jpg" alt="hardware" class="tec-img">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
 
-    <h1>Logic</h1>
- <p>Logic is the ability to think clearly, analyze situations, and make correct decisions 
-    based on rules and reasoning. In technology, logic is used to solve problems step by step 
-    and to decide what action should happen next.</p>
-    <img src="/src/img/logic.png" alt="hardware" class="tec-img">
+    <div class="container">
 
-      <h1>Database</h1>
- <p>A database is an organized place where data is stored, managed, and retrieved. 
-    It is used to keep information in a structured way so it can be easily found, updated, 
-    and deleted. Databases are used in almost all software systems.</p>
-    <img src="/src/img/hard.jpg" alt="hardware" class="tec-img">
+      <!-- LOGO -->
+      <a href="#" class="navbar-brand d-flex align-items-center gap-2">
 
-      <h1>WCM</h1>
- <p>WCM stands for Web Content Management. It is a system used to create, edit, organize, 
-    and publish content on websites. With a WCM, users can manage text, images, videos, 
-    and pages through an easy interface, without needing advanced programming skills.</p>
-    <img src="/src/img/hard.jpg" alt="hardware" class="tec-img">
+        <img
+          src="src/img/logo.png"
+          alt="Technology School Logo"
+          width="50">
 
-      <h1>Mobile</h1>
- <p>Mobile refers to technology related to smartphones and tablets. Mobile devices are 
-    portable and allow people to communicate, access the internet, use applications, and 
-    perform daily tasks from anywhere. Examples of mobile devices include Android phones 
-    and iPhones.</p>
-    <img src="/src/img/hard.jpg" alt="hardware" class="tec-img">
+        <span class="fw-bold">
+          TecSchool
+        </span>
 
-      <h1>Information Security</h1>
- <p>Information security is the practice of protecting information from unauthorized access, 
-    use, modification, or destruction. Its main goal is to keep data safe and reliable. 
-    Information security is important for personal data, company information, and digital 
-    systems.</p>
-    <img src="/src/img/hard.jpg" alt="hardware" class="tec-img">
+      </a>
+
+      <!-- MOBILE BUTTON -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu">
+
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+
+      <!-- MENU -->
+      <div class="collapse navbar-collapse" id="menu">
+
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="techn.html" class="nav-link">
+              Technology
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="calendar.html" class="nav-link">
+              Calendar
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="login.html" class="btn btn-primary px-4">
+              Login
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
     </div>
 
-    <footer>
-         <div class="social">
-            <a href="#"><img src="/src/icons/insta.svg" alt="Instagram"></a>
-             <a href="#"><img src="/src/icons/face.svg" alt="Facebook"></a>
-              <a href="#"><img src="/src/icons/link.svg" alt="Linkedin"></a>
-               <a href="#"><img src="/src/icons/yt.svg" alt="Youtube"></a>
+  </nav>
+
+
+  <!-- HERO -->
+  <section class="bg-dark text-white py-5 text-center">
+
+    <div class="container">
+
+      <h1 class="display-4 fw-bold">
+        Technology Areas
+      </h1>
+
+      <p class="lead mt-3">
+        Learn the fundamentals of modern technology and software development.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- TECHNOLOGY CONTENT -->
+  <main class="py-5">
+
+    <div class="container">
+
+      <div class="row g-4">
+
+        <!-- SOFTWARE -->
+        <div class="col-lg-6">
+
+          <div class="card h-100 shadow-sm border-0">
+
+            <img
+              src="/src/img/soft.png"
+              class="card-img-top"
+              alt="Software"
+            />
+
+            <div class="card-body">
+
+              <h2 class="card-title mb-3">Software</h2>
+
+              <p class="card-text text-secondary">
+                Software is a set of programs and instructions that tell a
+                computer, phone, or tablet what to do. Examples include apps,
+                websites, games, and operating systems like Windows and Android.
+              </p>
+
+            </div>
+
+          </div>
+
         </div>
 
-        <div><a href="#" class="logo">
-            <img src="src/img/logo.png" alt="logo">
-        </a></div>
-    </footer>
+        <!-- HARDWARE -->
+        <div class="col-lg-6">
+
+          <div class="card h-100 shadow-sm border-0">
+
+            <img
+              src="/src/img/hard.jpg"
+              class="card-img-top"
+              alt="Hardware"
+            />
+
+            <div class="card-body">
+
+              <h2 class="card-title mb-3">Hardware</h2>
+
+              <p class="card-text text-secondary">
+                Hardware is the physical part of a computer or electronic device,
+                including the keyboard, monitor, processor, memory, and storage.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- LOGIC -->
+        <div class="col-lg-6">
+
+          <div class="card h-100 shadow-sm border-0">
+
+            <img
+              src="/src/img/logic.png"
+              class="card-img-top"
+              alt="Logic"
+            />
+
+            <div class="card-body">
+
+              <h2 class="card-title mb-3">Logic</h2>
+
+              <p class="card-text text-secondary">
+                Logic is the ability to think step by step to solve problems and
+                make decisions. It is essential in programming and software
+                development.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- DATABASE -->
+        <div class="col-lg-6">
+
+          <div class="card h-100 shadow-sm border-0">
+
+            <img
+              src="/src/img/database.jpg"
+              class="card-img-top"
+              alt="Database"
+            />
+
+            <div class="card-body">
+
+              <h2 class="card-title mb-3">Database</h2>
+
+              <p class="card-text text-secondary">
+                A database stores and organizes information in a structured way
+                so data can be accessed, updated, and managed efficiently.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- WCM -->
+        <div class="col-lg-6">
+
+          <div class="card h-100 shadow-sm border-0">
+
+            <img
+              src="/src/img/wcm.jpg"
+              class="card-img-top"
+              alt="WCM"
+            />
+
+            <div class="card-body">
+
+              <h2 class="card-title mb-3">WCM</h2>
+
+              <p class="card-text text-secondary">
+                WCM (Web Content Management) helps users create and manage website
+                content without needing advanced programming knowledge.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- MOBILE -->
+        <div class="col-lg-6">
+
+          <div class="card h-100 shadow-sm border-0">
+
+            <img
+              src="/src/img/mobile.jpg"
+              class="card-img-top"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+
+              <h2 class="card-title mb-3">Mobile</h2>
+
+              <p class="card-text text-secondary">
+                Mobile technology includes smartphones and tablets that allow
+                people to access apps, websites, and services anywhere.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- INFORMATION SECURITY -->
+        <div class="col-lg-6 mx-auto">
+
+          <div class="card h-100 shadow-sm border-0">
+
+            <img
+              src="/src/img/security.jpg"
+              class="card-img-top"
+              alt="Information Security"
+            />
+
+            <div class="card-body">
+
+              <h2 class="card-title mb-3">
+                Information Security
+              </h2>
+
+              <p class="card-text text-secondary">
+                Information security protects digital systems and data from
+                unauthorized access, attacks, and loss.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+   <!----FOOTER---->
+
+  <footer class="bg-dark text-white py-4">
+
+    <div class="container">
+
+      <div class="row align-items-center text-center text-lg-start g-4">
+
+        <!-- SOCIAL -->
+        <div class="col-lg-4">
+
+          <div class="d-flex justify-content-center justify-content-lg-start gap-3">
+
+            <a href="#" class="text-white fs-4">
+              <i class="bi bi-instagram"></i>
+            </a>
+
+            <a href="#" class="text-white fs-4">
+              <i class="bi bi-facebook"></i>
+            </a>
+
+            <a href="#" class="text-white fs-4">
+              <i class="bi bi-linkedin"></i>
+            </a>
+
+            <a href="#" class="text-white fs-4">
+              <i class="bi bi-youtube"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- COPYRIGHT -->
+        <div class="col-lg-4 text-center">
+
+          <p class="mb-0">
+            © 2026 TecSchool. All rights reserved.
+          </p>
+
+        </div>
+
+        <!-- LOGO -->
+        <div class="col-lg-4 text-center text-lg-end">
+
+          <img
+            src="src/img/logo.png"
+            alt="TecSchool Logo"
+            width="60">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- CUSTOM JS -->
+  <script src="src/script/script.js"></script>
+
 </body>
 
-<link href="src/script/script.js">
 </html>
