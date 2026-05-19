@@ -7,8 +7,8 @@
 
   <title>Technology School | Login</title>
 
-  <!-- FAVICON -->
-  <link rel="icon" href="src/tec.ico" />
+ <!-- FAVICON -->
+  <link rel="icon" href="src/img/logo.png">
 
   <!-- BOOTSTRAP -->
   <link
@@ -16,75 +16,90 @@
     rel="stylesheet"
   />
 
+   <!-- BOOTSTRAP ICONS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
   <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="src/style/style.css" />
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
+   <!---- NAVBAR ---->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
 
-      <div class="container">
+    <div class="container">
 
-        <!-- LOGO -->
-        <a class="navbar-brand" href="#">
-          <img src="src/img/logo.png" alt="TecSchool Logo" width="140" />
-        </a>
+      <!-- LOGO -->
+      <a href="index.html" class="navbar-brand d-flex align-items-center gap-2">
 
-        <!-- MOBILE BUTTON -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarMenu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <img
+          src="src/img/logo.png"
+          alt="Technology School Logo"
+          width="50">
 
-        <!-- MENU -->
-        <div class="collapse navbar-collapse" id="navbarMenu">
+        <span class="fw-bold">
+          TecSchool
+        </span>
 
-          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+      </a>
 
-            <li class="nav-item">
-              <a class="nav-link" href="/index.html">Home</a>
-            </li>
+      <!-- MOBILE BUTTON -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu">
 
-            <li class="nav-item">
-              <a class="nav-link" href="/techn.html">Technology</a>
-            </li>
+        <span class="navbar-toggler-icon"></span>
 
-            <li class="nav-item">
-              <a class="nav-link" href="/calendar.html">Calendar</a>
-            </li>
+      </button>
 
-            <li class="nav-item">
-              <a class="btn btn-primary px-4 active" href="/login.html">
-                Login
-              </a>
-            </li>
+      <!-- MENU -->
+      <div class="collapse navbar-collapse" id="menu">
 
-          </ul>
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
 
-        </div>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="techn.html" class="nav-link">
+              Technology
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="calendar.html" class="nav-link">
+              Calendar
+            </a>
+          </li>
+
+        </ul>
 
       </div>
 
-    </nav>
+    </div>
 
-  </header>
+  </nav>
 
   <!-- LOGIN SECTION -->
+   <!-- ADD A API TO LOGIN RUN -->
+    <h1>ADD A API TO LOGIN </h1>
   <main class="py-5 bg-light min-vh-100 d-flex align-items-center">
 
     <div class="container">
 
       <div class="row justify-content-center">
 
-        <div class="col-lg-5 col-md-8">
+        <div class="col-lg-12 col-md-8">
 
           <div class="card shadow border-0 rounded-4 p-4">
 
@@ -103,6 +118,9 @@
 
               </div>
 
+              <!-- REMOVE ALL PHP CODES, USE JAVASCRIPT OR API ------
+               ----------------------------------------------
+               ----------------------------------------------->
               <!-- FORM -->
               <form
                 method="post"
@@ -180,42 +198,55 @@
 
   </main>
 
-  <!-- FOOTER -->
+  <!----FOOTER---->
+
   <footer class="bg-dark text-white py-4">
 
     <div class="container">
 
-      <div class="row align-items-center text-center text-md-start">
+      <div class="row align-items-center text-center text-lg-start g-4">
 
         <!-- SOCIAL -->
-        <div class="col-md-6 mb-3 mb-md-0">
+        <div class="col-lg-4">
 
-          <div class="d-flex justify-content-center justify-content-md-start gap-3">
+          <div class="d-flex justify-content-center justify-content-lg-start gap-3">
 
-            <a href="#">
-              <img src="/src/icons/insta.svg" alt="Instagram" width="30" />
+            <a href="#" class="text-white fs-4">
+              <i class="bi bi-instagram"></i>
             </a>
 
-            <a href="#">
-              <img src="/src/icons/face.svg" alt="Facebook" width="30" />
+            <a href="#" class="text-white fs-4">
+              <i class="bi bi-facebook"></i>
             </a>
 
-            <a href="#">
-              <img src="/src/icons/link.svg" alt="LinkedIn" width="30" />
+            <a href="#" class="text-white fs-4">
+              <i class="bi bi-linkedin"></i>
             </a>
 
-            <a href="#">
-              <img src="/src/icons/yt.svg" alt="YouTube" width="30" />
+            <a href="#" class="text-white fs-4">
+              <i class="bi bi-youtube"></i>
             </a>
 
           </div>
 
         </div>
 
-        <!-- LOGO -->
-        <div class="col-md-6 text-center text-md-end">
+        <!-- COPYRIGHT -->
+        <div class="col-lg-4 text-center">
 
-          <img src="src/img/logo.png" alt="TecSchool Logo" width="140" />
+          <p class="mb-0">
+            © 2026 TecSchool. All rights reserved.
+          </p>
+
+        </div>
+
+        <!-- LOGO -->
+        <div class="col-lg-4 text-center text-lg-end">
+
+          <img
+            src="src/img/logo.png"
+            alt="TecSchool Logo"
+            width="60">
 
         </div>
 
