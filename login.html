@@ -91,102 +91,91 @@
   </nav>
 
   <!-- LOGIN SECTION -->
-   <!-- ADD A API TO LOGIN RUN -->
-    <h1>ADD A API TO LOGIN </h1>
-  <main class="py-5 bg-light min-vh-100 d-flex align-items-center">
+<main class="py-5 bg-light min-vh-100 d-flex align-items-center">
 
-    <div class="container">
+  <div class="container">
 
-      <div class="row justify-content-center">
+    <div class="row justify-content-center">
 
-        <div class="col-lg-12 col-md-8">
+      <!-- LOGIN CARD -->
+      <div class="col-lg-10">
 
-          <div class="card shadow border-0 rounded-4 p-4">
+        <div class="card shadow border-0 rounded-4 p-4">
 
-            <div class="card-body">
+          <div class="card-body">
 
-              <!-- TITLE -->
-              <div class="text-center mb-4">
+            <!-- TITLE -->
+            <div class="text-center mb-4">
 
-                <h2 class="fw-bold">
-                  LOGIN
-                </h2>
+              <h2 class="fw-bold">
+                LOGIN
+              </h2>
 
-                <p class="text-secondary">
-                  Access your account
+              <p class="text-secondary">
+                Access your account
+              </p>
+
+            </div>
+
+            <!-- FORM -->
+            <form id="loginForm">
+
+              <!-- EMAIL -->
+              <div class="mb-3">
+
+                <label class="form-label">
+                  E-mail
+                </label>
+
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Enter your e-mail"
+                  required
+                />
+
+              </div>
+
+              <!-- PASSWORD -->
+              <div class="mb-4">
+
+                <label class="form-label">
+                  Password
+                </label>
+
+                <input
+                  type="password"
+                  id="password"
+                  class="form-control"
+                  placeholder="Enter your password"
+                  required
+                />
+
+              </div>
+
+              <!-- BUTTON -->
+              <div class="d-grid">
+
+                <button type="submit" class="btn btn-primary py-2">
+                  Login
+                </button>
+
+              </div>
+
+              <!-- REGISTER -->
+              <div class="text-center mt-4">
+
+                <p class="mb-0">
+                  Don’t have an account?
+                  <a href="/register.html" class="text-decoration-none">
+                    Sign up
+                  </a>
                 </p>
 
               </div>
 
-              <!-- REMOVE ALL PHP CODES, USE JAVASCRIPT OR API ------
-               ----------------------------------------------
-               ----------------------------------------------->
-              <!-- FORM -->
-              <form
-                method="post"
-                action="/src/php/log.php"
-                class="formlogin"
-                name="formlogin"
-              >
-
-                <!-- EMAIL -->
-                <div class="mb-3">
-
-                  <label class="form-label">
-                    E-mail
-                  </label>
-
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Enter your e-mail"
-                    name="email"
-                    required
-                  />
-
-                </div>
-
-                <!-- PASSWORD -->
-                <div class="mb-4">
-
-                  <label class="form-label">
-                    Password
-                  </label>
-
-                  <input
-                    type="password"
-                    class="form-control"
-                    placeholder="Enter your password"
-                    name="password"
-                    required
-                  />
-
-                </div>
-
-                <!-- BUTTON -->
-                <div class="d-grid">
-
-                  <button type="submit" class="btn btn-primary py-2">
-                    Login
-                  </button>
-
-                </div>
-
-                <!-- REGISTER -->
-                <div class="text-center mt-4">
-
-                  <p class="mb-0">
-                    Don’t have an account?
-                    <a href="/register.html" class="text-decoration-none">
-                      Sign up
-                    </a>
-                  </p>
-
-                </div>
-
-              </form>
-
-            </div>
+            </form>
 
           </div>
 
@@ -196,7 +185,9 @@
 
     </div>
 
-  </main>
+  </div>
+
+</main>
 
   <!----FOOTER---->
 
@@ -261,6 +252,8 @@
 
   <!-- CUSTOM JS -->
   <script src="src/script/script.js"></script>
+  <!--module, use import in js-->
+    <script type="module" src="src/script/login.js"></script>
 
 </body>
 

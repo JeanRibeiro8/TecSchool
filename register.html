@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <title>Technology School | Login</title>
+  <title>Technology School | Register</title>
 
- <!-- FAVICON -->
+  <!-- FAVICON -->
   <link rel="icon" href="src/img/logo.png">
 
   <!-- BOOTSTRAP -->
@@ -16,20 +16,20 @@
     rel="stylesheet"
   />
 
-   <!-- BOOTSTRAP ICONS -->
+  <!-- BOOTSTRAP ICONS -->
   <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  />
 
   <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="src/style/style.css" />
+
 </head>
 
 <body>
 
-   <!---- NAVBAR ---->
-
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
 
     <div class="container">
@@ -40,7 +40,8 @@
         <img
           src="src/img/logo.png"
           alt="Technology School Logo"
-          width="50">
+          width="50"
+        >
 
         <span class="fw-bold">
           TecSchool
@@ -53,7 +54,8 @@
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
-        data-bs-target="#menu">
+        data-bs-target="#menu"
+      >
 
         <span class="navbar-toggler-icon"></span>
 
@@ -90,16 +92,14 @@
 
   </nav>
 
-  <!-- SIGNUP SECTION -->
-   <!-- ADD A API TO RUN -->
-    <h1>ADD A API TO cad </h1>
+  <!-- REGISTER SECTION -->
   <main class="py-5 bg-light min-vh-100 d-flex align-items-center">
 
     <div class="container">
 
       <div class="row justify-content-center">
 
-        <div class="col-lg-12 col-md-8">
+        <div class="col-lg-10">
 
           <div class="card shadow border-0 rounded-4 p-4">
 
@@ -109,22 +109,17 @@
               <div class="text-center mb-4">
 
                 <h2 class="fw-bold">
-                  SIGNUP
+                  SIGN UP
                 </h2>
 
                 <p class="text-secondary">
-                  Access your account
+                  Create your account
                 </p>
 
               </div>
 
               <!-- FORM -->
-              <form
-                method="post"
-                action="/src/php/log.php"
-                class="formlogin"
-                name="formlogin"
-              >
+              <form id="signup-form">
 
                 <!-- EMAIL -->
                 <div class="mb-3">
@@ -144,7 +139,7 @@
                 </div>
 
                 <!-- PASSWORD -->
-                <div class="mb-4">
+                <div class="mb-3">
 
                   <label class="form-label">
                     Password
@@ -158,10 +153,22 @@
                     required
                   />
 
-                  <!--  <input type="password" class="cpass" placeholder="Confirm Password" name="cpassword" required>
-            <button type="submit" class="log">Sign up</button>
-            
-            REGISTER THE SIGNUP CODE-->
+                </div>
+
+                <!-- CONFIRM PASSWORD -->
+                <div class="mb-4">
+
+                  <label class="form-label">
+                    Confirm Password
+                  </label>
+
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Confirm your password"
+                    name="confirmPassword"
+                    required
+                  />
 
                 </div>
 
@@ -169,18 +176,18 @@
                 <div class="d-grid">
 
                   <button type="submit" class="btn btn-primary py-2">
-                    Login
+                    Sign Up
                   </button>
 
                 </div>
 
-                <!-- REGISTER -->
+                <!-- LOGIN -->
                 <div class="text-center mt-4">
 
                   <p class="mb-0">
-                    Don’t have an account?
-                    <a href="/register.html" class="text-decoration-none">
-                      Sign up
+                    Already have an account?
+                    <a href="login.html" class="text-decoration-none">
+                      Login
                     </a>
                   </p>
 
@@ -200,8 +207,7 @@
 
   </main>
 
-  <!----FOOTER---->
-
+  <!-- FOOTER -->
   <footer class="bg-dark text-white py-4">
 
     <div class="container">
@@ -248,7 +254,8 @@
           <img
             src="src/img/logo.png"
             alt="TecSchool Logo"
-            width="60">
+            width="60"
+          >
 
         </div>
 
@@ -261,8 +268,8 @@
   <!-- BOOTSTRAP JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- CUSTOM JS -->
-  <script src="src/script/script.js"></script>
+  <!-- REGISTER JS -->
+  <script type="module" src="src/script/register.js"></script>
 
 </body>
 
